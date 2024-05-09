@@ -7,6 +7,7 @@ import { useSnackbar } from "notistack";
 import {
   addItemToLocalStorage,
   getOptionByVarient,
+  sortByDate,
   updateItemInLocalStorage,
 } from "../../utils/Utils";
 
@@ -54,7 +55,7 @@ const AddExpenseModal = ({ onAddExpenseModalClose }) => {
       );
       return;
     }
-    setExpenses([...expenses, newExpense]);
+    setExpenses(sortByDate([...expenses, newExpense]));
     setBalance(balance - newExpense.price);
     enqueueSnackbar(
       `Expense added successfully with Title: ${newExpense.title}`,

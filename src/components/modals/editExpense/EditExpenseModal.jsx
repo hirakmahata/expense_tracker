@@ -4,6 +4,7 @@ import "./EditExpenseModal.css";
 import { useSnackbar } from "notistack";
 import {
   getOptionByVarient,
+  sortByDate,
   updateItemInLocalStorage,
 } from "../../utils/Utils";
 import { BalanceContext } from "../../context/BalanceContext";
@@ -20,7 +21,7 @@ const EditExpenseModal = ({ onEditExpenseModalClose, expenseEditObj }) => {
   });
 
   const [balance, setBalance] = useContext(BalanceContext);
-  const [expenses] = useContext(ExpenseContext);
+  const [expenses, setExpenses] = useContext(ExpenseContext);
 
   const handleEditInputChange = (e) => {
     const { name, value } = e.target;
@@ -63,6 +64,7 @@ const EditExpenseModal = ({ onEditExpenseModalClose, expenseEditObj }) => {
     expenseEditObj.price = priceNumber;
     expenseEditObj.category = category;
     expenseEditObj.date = date;
+    setExpenses(sortByDate(expenses));
     enqueueSnackbar(
       `Expense Edited successfully with Title: ${expenseEditObj.title}`,
       getOptionByVarient("success")

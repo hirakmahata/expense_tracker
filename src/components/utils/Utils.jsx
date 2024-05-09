@@ -29,3 +29,6 @@ export const getItemFromLocalStorage = (key) => {
   }
   return false;
 };
+
+export const sortByDate = (arr) =>
+  arr.sort((a, b) => new Date(b.date) - new Date(a.date));
