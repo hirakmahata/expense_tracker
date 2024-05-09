@@ -1,0 +1,127 @@
+.transaction-container {
+  width: 70%;
+}
+
+.transaction-heading {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.all-transactions {
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 29rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.left {
+  background-color: #f1f1f1;
+  filter: drop-shadow(3px 4px 4px #00000040);
+  color: #9b9b9b;
+  padding: 0.8rem;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pageNumber {
+  background-color: #43967b;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  background-color: #f1f1f1;
+  filter: drop-shadow(3px 4px 4px #00000040);
+  color: #9b9b9b;
+  padding: 0.8rem;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.disabled {
+  background-color: white;
+  color: #9b9b9b;
+  filter: none;
+  cursor: not-allowed;
+}
+
+.no-transactions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9b9b9b;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 1300px) {
+  .transaction-heading {
+    margin-bottom: 0.3rem;
+  }
+
+  .all-transactions {
+    padding: 0.7rem;
+    height: 23rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .transaction-container {
+    width: 100%;
+  }
+
+  .all-transactions {
+    height: 29rem;
+  }
+}
+
+@media screen and (max-width: 541px) {
+  .all-transactions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 33rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .all-transactions {
+    padding: 0;
+  }
+
+  .pagination {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .right,
+  .left {
+    padding: 0.5rem;
+  }
+  .pageNumber {
+    padding: 0.5rem 0.7rem;
+  }
+}

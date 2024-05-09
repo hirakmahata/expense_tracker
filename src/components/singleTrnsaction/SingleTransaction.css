@@ -1,0 +1,129 @@
+.item {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.name-icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9b9b9b;
+}
+
+.name-date {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.price-delete-edit {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price {
+  color: #f4bb4a;
+  font-size: 23px;
+  font-weight: 700;
+  margin-right: 2.5rem;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.edit {
+  background-color: #8d8d03bd;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .item {
+    margin: 0.8rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .item {
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 541px) {
+  .price {
+    margin-right: 1rem;
+  }
+  .delete {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .item {
+    margin: 0;
+    margin: 2rem 1.5rem;
+    padding-bottom: 0.8rem;
+  }
+  .icon {
+    margin: 0;
+    margin-right: 0.6rem;
+  }
+
+  .name-date {
+    gap: 0.1rem;
+  }
+  .name {
+    font-size: medium;
+  }
+  .date {
+    font-size: small;
+  }
+  .price {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .delete,
+  .edit {
+    padding: 0.2rem;
+  }
+  .price-delete-edit {
+    gap: 0.6rem;
+  }
+}

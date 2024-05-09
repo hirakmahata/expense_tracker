@@ -1,0 +1,55 @@
+.card {
+  background-color: #9b9b9b;
+  height: 14rem;
+  width: 25rem;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card > h1 {
+  font-weight: lighter;
+}
+
+.balance {
+  color: #9dff5b;
+  font-weight: 700;
+}
+
+.wallet-btn {
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #b5dc52, #89e148);
+  font-size: medium;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .card {
+    width: 23rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .card {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .balance {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}

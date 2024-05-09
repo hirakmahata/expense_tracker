@@ -1,0 +1,163 @@
+.balance-modal-container {
+  position: fixed;
+  inset: 0;
+  background-color: #ffffffc4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-balance-container {
+  background-color: #efefefd9;
+  height: 10rem;
+  width: 40rem;
+  border-radius: 15px;
+  padding: 1.5rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input-balance-modal {
+  width: 14rem;
+  height: 3.3rem;
+  padding: 1rem;
+  margin: 0.8rem;
+  border-radius: 15px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px #00000040);
+  color: #919191;
+  font-size: large;
+  appearance: none;
+  background-color: white;
+}
+
+.add-balance-btn {
+  width: 10rem;
+  height: 3.3rem;
+  padding: 1rem;
+  margin: 0.8rem;
+  border-radius: 15px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px #00000040);
+  background-color: #f4bb4a;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-balance-btn {
+  width: 6rem;
+  height: 3.3rem;
+  padding: 1rem;
+  margin: 0.8rem;
+  border-radius: 15px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px #00000040);
+  background-color: #eeeeee;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 541px) {
+  .add-balance-container {
+    height: 20rem;
+    width: 30rem;
+  }
+
+  .input-balance-modal {
+    width: 22rem;
+    height: 3.6rem;
+  }
+
+  .add-balance-btn {
+    width: 12rem;
+  }
+
+  .cancel-balance-btn {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .add-balance-container {
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+  }
+  .add-balance-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-balance-modal,
+  .add-balance-btn,
+  .cancel-balance-btn {
+    width: 25rem;
+    height: 3.8rem;
+    border-radius: 5px;
+    font-size: large;
+  }
+
+  .input-balance-modal {
+    height: 4.3rem;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .input-balance-modal,
+  .add-balance-btn,
+  .cancel-balance-btn {
+    width: 23rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .input-balance-modal,
+  .add-balance-btn,
+  .cancel-balance-btn {
+    width: 22rem;
+    margin: 0;
+  }
+
+  .add-balance-forms {
+    gap: 1rem;
+  }
+
+  .input-balance-modal {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 361px) {
+  .input-balance-modal,
+  .add-balance-btn,
+  .cancel-balance-btn {
+    width: 21rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  .input-balance-modal,
+  .add-balance-btn,
+  .cancel-balance-btn {
+    width: 20rem;
+  }
+
+  .input-balance-modal {
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .add-balance-forms {
+    height: 70%;
+    justify-content: center;
+  }
+}

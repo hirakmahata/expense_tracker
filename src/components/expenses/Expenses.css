@@ -1,0 +1,33 @@
+.expense {
+  color: #f4bb4a;
+  font-weight: 700;
+}
+
+.card > h1 {
+  font-weight: lighter;
+}
+
+.expense-btn {
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #ff9595, #ff4747, #ff3838);
+  font-size: medium;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) {
+  .expense-card {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .expense {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}

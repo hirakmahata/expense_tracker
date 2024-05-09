@@ -1,0 +1,49 @@
+.recharts-responsive-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.lebels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lebel {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.box {
+  height: 0.6rem;
+  width: 2rem;
+  border-radius: 5px;
+}
+.food-color {
+  background-color: #a000ff;
+}
+.entertainment-color {
+  background-color: #ff9304;
+}
+.travel-color {
+  background-color: #fde006;
+}
+
+@media screen and (max-width: 1600px) {
+  .lebel {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1346px) {
+  .lebel {
+    margin: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .lebel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

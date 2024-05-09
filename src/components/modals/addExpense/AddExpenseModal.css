@@ -1,0 +1,156 @@
+.modal-container {
+  position: fixed;
+  inset: 0;
+  background-color: #ffffffc4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-expense-container {
+  background-color: #efefefd9;
+  height: 25rem;
+  width: 40rem;
+  border-radius: 15px;
+  padding: 1.5rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input-modal {
+  width: 14rem;
+  height: 3.3rem;
+  padding: 1rem;
+  margin: 0.8rem;
+  border-radius: 15px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px #00000040);
+  color: #919191;
+  font-size: large;
+  appearance: none;
+  background-color: white;
+}
+
+.input-modal-select {
+  width: 14rem;
+  height: 3.3rem;
+  padding: 1rem;
+  margin: 0.8rem;
+  border-radius: 15px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px #00000040);
+  color: #919191;
+  font-size: large;
+  appearance: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.add-expense-btn {
+  width: 14rem;
+  height: 3.3rem;
+  padding: 1rem;
+  margin: 0.8rem;
+  border-radius: 15px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px #00000040);
+  background-color: #f4bb4a;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-expense-btn {
+  width: 8rem;
+  height: 3.3rem;
+  padding: 1rem;
+  margin: 0.8rem;
+  border-radius: 15px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px #00000040);
+  background-color: #eeeeee;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 541px) {
+  .add-expense-container {
+    padding: 1rem;
+    width: 30rem;
+  }
+
+  .input-modal,
+  .input-modal-select,
+  .add-expense-btn {
+    padding: 0.5rem 0.8rem;
+    width: 12rem;
+    height: 2.8rem;
+    border-radius: 10px;
+    font-size: medium;
+  }
+
+  .cancel-expense-btn {
+    height: 2.8rem;
+    font-size: medium;
+    border-radius: 10px;
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .add-expense-container {
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+  }
+  .forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-modal,
+  .input-modal-select,
+  .cancel-expense-btn,
+  .add-expense-btn {
+    width: 25rem;
+    height: 3.8rem;
+    border-radius: 5px;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .input-modal,
+  .input-modal-select,
+  .cancel-expense-btn,
+  .add-expense-btn {
+    width: 23rem;
+    height: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .input-modal,
+  .input-modal-select,
+  .cancel-expense-btn,
+  .add-expense-btn {
+    width: 22rem;
+  }
+}
+@media screen and (max-width: 361px) {
+  .input-modal,
+  .input-modal-select,
+  .cancel-expense-btn,
+  .add-expense-btn {
+    width: 21rem;
+  }
+}
